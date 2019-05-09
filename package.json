@@ -1,5 +1,5 @@
 {
-    "name": "root-coinlocker",
+    "name": "coinlocker",
     "version": "1.0.0",
     "description": "coin locker system for IGEARGEEK job applying",
     "main": "index.js",

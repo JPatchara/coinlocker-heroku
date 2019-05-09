@@ -1,1 +1,0 @@
-web: node ./exercise/server/server.js
