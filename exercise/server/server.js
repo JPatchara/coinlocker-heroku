@@ -10,7 +10,7 @@ const path = require('path')
 //----setting up development environment----//
 const dev = process.env.NODE_ENV !== 'production'
 const PORT = process.env.PORT || 3000
-const nextApp = next({  dir: './client' }, dev)
+const nextApp = next({  dir: '../client' }, dev)
 const handle = nextApp.getRequestHandler()
 
 //----db handle with mongoose----//
@@ -21,8 +21,8 @@ mongoose.connect(connectionURL, {useNewUrlParser: true})
 
 //----server starting handle----//
 nextApp.prepare().then(() => {
-    const lockerRoutes = require('./server/routes/lockers')
-    const customerRoutes = require('./server/routes/customers')
+    const lockerRoutes = require('./routes/lockers')
+    const customerRoutes = require('./routes/customers')
     
     server.use(cors({ origin: true }))
     server.use(bodyParser.json()) //support json encoded body
