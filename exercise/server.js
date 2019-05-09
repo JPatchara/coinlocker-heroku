@@ -10,7 +10,7 @@ const path = require('path')
 //----setting up development environment----//
 const dev = process.env.NODE_ENV !== 'production'
 const PORT = process.env.PORT || 3000
-const nextApp = next({  dir: '../client' }, dev)
+const nextApp = next({  dir: './client' }, dev)
 const handle = nextApp.getRequestHandler()
 
 //----db handle with mongoose----//
