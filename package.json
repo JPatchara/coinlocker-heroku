@@ -8,6 +8,8 @@
         "node": "10.15.0"
     },
     "scripts": {
+        "build": "next build",
+		"start": "next start",
         "heroku-postbuild": "cd exercise/client && npm install --only=dev && npm install && npm run build"
     }
 }
