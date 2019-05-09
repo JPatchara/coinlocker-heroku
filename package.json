@@ -1,0 +1,13 @@
+{
+    "name": "root",
+    "version": "1.0.0",
+    "description": "coin locker system for IGEARGEEK job applying",
+    "author": "Patchara Chukiatkajohn(Jin)",
+    "license": "ISC",
+    "engines": {
+        "node": "10.15.0"
+    },
+    "scripts": {
+        "heroku-postbuild": "cd exercise/client && npm install --only=dev && npm install && npm run build"
+    }
+}
