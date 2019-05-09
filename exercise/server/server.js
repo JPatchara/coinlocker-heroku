@@ -37,9 +37,9 @@ nextApp.prepare().then(() => {
         return handle(req, res)
     })
 
-    server.use(express.static(path.join(__dirname, "./client", "build")))
+    server.use(express.static(path.join(__dirname, "client", "build")))
     server.get("*", (req, res) => {
-        res.sendFile(path.join(__dirname, "./client", "build", "index.html"));
+        res.sendFile(path.join(__dirname, "client", "build", "index.html"));
     })
     
     const app = server.listen(process.env.PORT || PORT, (err) => {
