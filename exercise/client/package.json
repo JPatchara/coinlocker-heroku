@@ -10,7 +10,8 @@
         "next": "^8.1.0"
     },
     "scripts": {
-        "start": "next start",
-        "build": "next build"
+        "prestart": "next build",
+        "build": "next build",
+        "start": "next start -p ${PORT}"
     }
 }
